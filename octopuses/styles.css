@@ -1,0 +1,246 @@
+/* 
+   styles.css 
+*/
+
+/* base page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: #e4e4e4;  
+}
+
+/* 
+   main sections
+*/
+#header,
+#main-content,
+#species-table,
+#footer {
+    width: 95%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+#header {
+    background-color: #1177dd;       
+    color: #ffffff;
+    text-align: center;
+    padding: 18px 0 10px;
+    border-bottom: 4px solid #0b5fae; 
+}
+
+/* title */
+#header h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* keep spacing consistent */
+#header p {
+    margin-bottom: 4px;
+}
+
+/* MAIN CONTENT */
+
+#main-content {
+    background-color: #f5f5f5;   
+    padding: 25px 20px 30px;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+}
+
+/* headings / typography */
+#main-content h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#main-content h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#main-content h4 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#main-content h5 {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#main-content h6 {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 2;
+
+}
+#main-content h6 + p {
+    margin-top: 0;
+}
+#main-content h2,
+#main-content h3,
+#main-content h4,
+#main-content h5,
+#main-content h6 {
+    color: #000000;
+}
+
+/* paragraphs / lists spacing */
+#main-content p {
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.facts-list,
+.comparison-list {
+    margin-top: 4px;
+    margin-bottom: 12px;
+    padding-left: 25px;
+}
+
+.facts-list li,
+.comparison-list li {
+    margin-bottom: 2px;   /* space between list items */
+    line-height: 1.6;     
+}
+
+/* external links underlined blue */
+.resources-text a {
+    color: #0044cc;
+    text-decoration: underline;
+}
+
+/* QUIZ */
+
+#quiz-section {
+    margin-top: 24px;
+    padding: 16px 18px;
+    background-color: #e6f4ff;      
+    border: 1px solid #c6d8f0;
+    position: relative;             
+}
+
+/* quiz heading */
+#quiz-section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* quiz image */
+#quiz-section img {
+    position: absolute;
+    right: 20px;
+    top: 18px;
+    border: 4px solid rgb(152, 20, 222);
+}
+
+/* form labels */
+#quiz-section label {
+    display: inline-block;      
+    margin-bottom: 4px;
+}
+
+/* text inputs */
+#quiz-section input[type="text"] {
+    width: 260px;
+    height: 18px;
+    margin-bottom: 4px;
+}
+
+/* submit button */
+#quiz-section input[type="submit"] {
+    margin-top: 1px;
+    padding: 3px 8px;
+    border: 1px solid #666666;
+    background-color: #eeeeee;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+/* SPECIES TABLE */
+
+#species-table {
+    background-color: #f5f5f5;
+    padding: 15px 0px 30px;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+}
+
+/* heading above table */
+#species-table h2 {
+    font-size: 18px;
+    margin: 0 0 8px;
+}
+
+/* table styling */
+#species-table table {
+    border-collapse: separate;   
+    border-spacing: 1px;         /* space between cells */
+    background-color: #ffffff;   /* grid lines */
+
+}
+
+#species-table th,
+#species-table td {
+    background-color: #f2f2f2;
+    padding: 8px 14px;
+    border: 1px solid #444444;
+}
+
+/* hrader row */
+#species-table th {
+    background-color: #a9a9a9;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px 14px;
+    border: 1px solid #444444;
+}
+
+/* alternating row colors */
+#species-table tr:nth-child(2) td {
+    background-color: #e0e0e0;
+}
+
+#species-table tr:nth-child(3) td {
+    background-color: #ffffff;
+}
+
+/* FOOTER */
+
+#footer {
+    background-color: #d3d3d3;
+    border-top: 1px solid #aaaaaa;
+    padding: 10px 40px;
+    font-size: 12px;
+    text-align: left;
+}
+
+/* separation from table above */
+#footer p {
+    margin: 4px 0;
+}
+
+/*
+    notes / difficulties:
+
+    - spacing and colors from the screenshot are hard to
+      get just right so colors and margins are
+      approximated by eye.
+    - couldn't change the HTML structure, so rather than
+      wrapping everything in a single container, each main section has to have
+      matching width and margins to align them like one column.
+*/
